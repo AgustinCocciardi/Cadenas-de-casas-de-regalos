@@ -49,7 +49,7 @@ public class Cadena {
         Integer actual, auxiliar;
         boolean puedoPintar;
         int recorrido;
-        while(this.noPintados.isEmpty() == false){
+        while(this.noPintados.isEmpty() == false && this.noPintados.size() > this.solucion.size()){
             Integer iterador = this.noPintados.remove(0);
             pintadosActuales = new ArrayList<Integer>();
             pintadosActuales.add(iterador);
@@ -76,7 +76,7 @@ public class Cadena {
     }
     
     public void resolver(PrintWriter salida){
-        for(int i=0; i<10000 ; i++){
+        for(int i=0; i<1000000 ; i++){
             this.setearLista();
             this.pintar();
         }
