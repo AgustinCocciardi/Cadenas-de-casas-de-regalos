@@ -25,7 +25,6 @@ public class Cadena {
         this.matrizAdyacencia = new int[this.cantidadSucursales][this.cantidadSucursales];
         for(int[] rows : matrizAdyacencia)
             Arrays.fill(rows, Integer.MAX_VALUE);
-        
         for(int i=0; i<this.cantidadSucursales; i++){
             while((valor = entrada.nextInt()) != -1){
                 if(i != valor){
